@@ -140,13 +140,14 @@ main{
     font-weight: 500;
     line-height: 1.6rem;
     color: #757575;
+    padding: 15px;
 }
 
 .main-currency-table{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
+    height: auto;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
@@ -157,6 +158,8 @@ main{
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
     text-align: left;
+    margin-left: 25px;
+    margin-top: 15px;
 }
 .currency-table--container{
     width: 90%;
@@ -165,17 +168,35 @@ main{
     height: 250px;
     margin: 0 auto;
 }
-.currency-table--container table{
+.currency-table--container table {
     width: 100%;
     height: 100%;
 }
-.currency-table--container td{
+.currency-table--container td {
     width: 50%;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
     color: var(--grey);
     background-color: var(--just-white);
+}
+.currency-table--container .table__top-lef{
+    border-radius: 15px 0 0 0;
+}
+.currency-table--container .table__top-right{
+    border-radius: 0 15px 0 0;
+}
+.currency-table--container .table__botton-left{
+    border-radius: 0 0 0 15px;
+}
+.currency-table--container .table__botton-right{
+    border-radius: 0 0 15px 0;
+}
+.currency-table--container .table__right{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
 }
 .main-tables-container .icon--1{
     width: 10px;
@@ -199,4 +220,90 @@ main{
     margin-top: 5px;
     margin-left: 5px;
     align-self: center;
+}
+.currency-table--date{
+    width: 190px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 50px;    
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--soft-orange);
+}
+.currency-table--date p{
+    margin: 5px;
+     font-size: 1.1rem;
+    color: var(--warm-black);
+}
+.Main__product--details{
+    width: 100%;
+    height: 998x;
+    padding-top: 80px;
+    padding-bottom: center;
+    text-align: center;
+    background-color: var(--warm-black);
+    
+}
+.Main__product--details .potatoe{
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 10px;
+    background-image: url("/Assets/icons/batata.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.Main__product--details .Main__product--details--title h2{
+    width: 90%;
+    min-width: 288px
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    color: 
+}
+.Main__product--details .Main__product--details--title p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+    padding: 15px;
+
+}
+.product__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.product__details{
+    width: 90%;
+    height: 200px;
+    background-color: var(--black);
+    margin-bottom: 10px;
+    
+}
+.product__container .product__details h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: var(--just-white);
+}
+.product__container .product__details p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #757575
 }
