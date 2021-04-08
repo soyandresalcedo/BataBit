@@ -262,7 +262,7 @@ main{
     max-width: 900px;
     margin: 0 auto;
     font-size: 2.4rem;
-    color: 
+    color: var(--just-white);
 }
 .Main__product--details .Main__product--details--title p{
     margin-bottom: 30px;
@@ -306,4 +306,8 @@ main{
     margin-top: 20px;
     margin-bottom: 10px;
     color: #757575
+}
+.product__details:hover{
+    border: solid;
+    border-color: var(--bitcoin-orange);
 }
