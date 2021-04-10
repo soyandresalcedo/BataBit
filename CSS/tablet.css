@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+.plans-container-slider{
+    justify-content: center;
+    sc
+   
+}
+
+.product__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product__details{
+    width: 100%;
+    max-width: 250px;
+    height: 220px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+.product__details:hover{
+    border: solid;
+    border-color: var(--bitcoin-orange);
+    padding: 5px;
+}
+
+.footer  section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--just-white);
+    margin-bottom: 5px;
+    
+}
+.footer li{
+    list-style: none;
+    margin: 10px 0;
+}
