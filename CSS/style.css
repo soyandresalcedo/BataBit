@@ -377,15 +377,26 @@ main{
 
 }
 .plans-container-slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    
+    
+}
+.plans-cards{
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 200px;
     max-width: 300px;
     height: 250px;
     padding: 20px;
-    display: inline-block;
     background-color: var(--off-white);
     border-radius: 10px;
     position: relative;
+    margin: 20px 20px;
+    
 }
 .recomendado{
     position: absolute;
@@ -408,6 +419,8 @@ main{
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
+    margin-left: 12px;
+    margin-bottom: 10px;
     
 }
 .plan-card--price{
@@ -416,16 +429,78 @@ main{
     font-weight: bold;
     line-height: 6.2rem;
     color: var(--black);
+    font-family: 'Inter', sans-serif;
 }
-.footer {
+
+.icon--4 img{
+    width: 20px;
+    height: 15px;
+    background-repeat: no-repeat;
+    vertical-align: text-top;;
+   
+}
+.plan-card-saving{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-align: center;
+    color: #757575;
+    padding: 10px;
+
+}
+.plan-card--ca{
+    width: 151px;
+    height: 48px;
+    top: 2792px;
+    left: 85px;
+    border-radius: 4px;
+    padding: 12 16;
+    border: solid;
+    border-color: var(--bitcoin-orange);
+    background-color: #E5E5E5;
+
+}
+.plan-card--ca p{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--black);
+    line-height: 1.8rem;
+    text-align: left;
+    margin-left: 20px;
+}
+.plan-card--ca p .vector{
+    display: inline-flex;
+    width: 20px;
+    height: 14px;
+    background-image: url(/Assets/icons/orange-right-arrow.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    padding: 5px;
+    margin: 2px 5px 5px 10px ;
+}
+.footer{
+    display: flex;
+    width: 100%;
     min-width: 320px;
-    height: 150px;
+    min-height: 150px;
+    max-height: 200px;
     background-color: var(--bitcoin-orange);
-    padding: 30px 20px 20px;
 }
-.footer p{
+.footer  section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul{
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--just-white);
     margin-bottom: 5px;
+    
+}
+.footer li{
+    list-style: none;
+    margin: 10px 0;
 }
