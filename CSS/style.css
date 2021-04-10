@@ -25,6 +25,7 @@
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 header{
     position: relative;
@@ -35,7 +36,8 @@ header{
     min-width: 320px;
     height: 334px;
     text-align: center;
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    
 }
 header img{
     width: 150px;
@@ -87,6 +89,7 @@ header img{
     font-weight: bold;
     text-decoration: none;
     color: var(--black);
+    scroll-behavior: smooth;
 }
 .header--button span {
     display: inline-block;
@@ -243,18 +246,20 @@ main{
     padding-bottom: center;
     text-align: center;
     background-color: var(--warm-black);
+    position: relative;
     
 }
 .Main__product--details .potatoe{
-    width: 100px;
-    height: 60px;
+    position: absolute;
+	top: calc(0% - 12.5px);
+	left: calc(50% - 20px);
+    width: 40px;
+    height: 25px;
     display: inline-block;
-    margin-top: 35px;
-    margin-left: 10px;
     background-image: url("/Assets/icons/batata.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
+        
 }
 .Main__product--details .Main__product--details--title h2{
     width: 90%;
@@ -279,13 +284,21 @@ main{
     align-items: center;
 }
 
-
+.product__details .icon--3{
+    display: flex;
+    align-self: right;
+    padding: 0;
+    margin: 0 auto;
+    margin-left: 10px;
+}
 .product__details{
     width: 90%;
-    height: 200px;
+    min-height: 150px;
     background-color: var(--black);
     margin-bottom: 10px;
-    
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 .product__container .product__details h3{
     font-size: 1.8rem;
@@ -310,4 +323,109 @@ main{
 .product__details:hover{
     border: solid;
     border-color: var(--bitcoin-orange);
+}
+.Bitcoin-img-container{
+    width: 100%;
+    height: 400px;
+    background-image: url(/Assets/img/bitcoinbaby.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.Bitcoin-img-container h2 {
+    padding-top: 60px;
+    width: 288px;
+    min-width: 320px;
+    line-height: 2.6rem;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+    color: var(--just-white);
+    font-weight: bold;
+    
+}
+.Plans{
+    width: 100%;
+    min-width: 320px;
+    background-color: #E5E5E5;
+    padding-bottom: 70px;
+    text-align: center;
+
+}
+.Main__Plans--title {
+    
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+    
+}
+.Plans .Main__Plans--title h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.Plans .Main__Plans--title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+
+}
+.plans-container-slider{
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    padding: 20px;
+    display: inline-block;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    position: relative;
+}
+.recomendado{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    padding: 7px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+   
+}
+.plan-card--title{
+    padding-top: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    
+}
+.plan-card--price{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.2rem;
+    color: var(--black);
+}
+.footer {
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+    padding: 30px 20px 20px;
+}
+.footer p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--just-white);
+    margin-bottom: 5px;
 }
